@@ -1,0 +1,23 @@
+Request: <br>
+{{ dump(request) }}
+{#
+<ul>
+{% for name, value in request_headers %}
+    <li>{{ name }}: {{ value }}</li>
+{% endfor %}
+</ul>
+#}
+<br>
+
+Response: <br>
+
+{{ dump(response) }}
+{#
+<ul>
+    {% for name, value in response_headers %}
+        <li>{{ name }}: {{ value }}</li>
+    {% endfor %}
+</ul>
+#}
+
+<br>
